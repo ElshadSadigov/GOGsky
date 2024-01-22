@@ -124,7 +124,7 @@
 .homeSearch {
     width: 100%;
     height: 100vh;
-    background-image: url('../Imgs/homeSearch.png');
+    background-image: url('./homeSearch.png');
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;

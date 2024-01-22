@@ -13,7 +13,7 @@
 
 .loginInfo{
     width: 40%;
-    background-image: url('../Imgs/loginBG.png');
+    background-image: url('./loginBG.png');
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
