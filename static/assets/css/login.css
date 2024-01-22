@@ -1,0 +1,191 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+}
+.login{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+}
+
+.loginInfo{
+    width: 40%;
+    background-image: url('../Imgs/loginBG.png');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 187px 70px 187px 105px;    
+}
+.loginInfo > span{
+    color: #fff;
+    font-size: 32px;
+    font-weight: bolder;
+}
+.loginInfo > div{
+    margin-top: 16px;
+}
+
+.loginInfo > div > span{
+    font-size: 50px;
+    color: #fff;
+    font-weight: lighter;
+}
+
+.loginInfo > div > p{
+    color: #fff;
+    font-size: 20px;
+    margin-top: 16px;
+}
+
+.loginFunc{
+    width: 60%;
+    padding: 40px 130px;
+    display: flex;
+    flex-direction: column;
+}
+.loginTitle{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.loginTitle > span:nth-child(1){
+    font-size: 44px;
+}
+.loginTitle > span:nth-child(2){
+    font-size: 32px;
+    font-weight: lighter;
+    margin-top: 14px;
+}
+.loginInputs{
+    display: flex;
+    flex-direction: column;
+}
+
+.loginDifferent{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    margin: 30px 0  ;
+}
+
+.loginDifferent > button{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: none;
+    border: 1px solid #e6e6e6;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 20px;
+}
+.loginDifferent > button > svg{
+    margin-right: 16px;
+}
+.loginDifferent > button:nth-child(1){
+    padding: 12.5px 0;
+}
+.loginDifferent > button:nth-child(2){
+    padding: 7.5px 0;
+    margin: 16px 0 0 0;
+}
+
+.loginLine{
+    display: flex;
+    align-items: center;
+}
+.loginLine > div{
+    width: 50%;
+    height: 2px;
+    background: #e6e6e6;
+}
+.loginLine > span{
+    margin: 0 23px;
+    font-size: 18px;
+    color: #666;
+}
+
+.inputs{
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+}
+.userName{
+    display: flex;
+    flex-direction: column;
+}
+.userName > label{
+    font-size: 14px;
+    font-weight: bold;
+    color: #10002e;
+}
+.userName > input{
+    margin-top: 8px;
+    border: 1px solid #d5d4dc;
+    padding: 12px; 
+    border-radius: 8px;
+}
+.userName > input:focus{
+    outline: none;
+}
+
+.userPassword{
+    display: flex;
+    flex-direction: column;
+    margin-top: 18px;
+}
+
+.userPassword > label{
+    font-size: 14px;
+    font-weight: bold;
+    color: #10002e;
+}
+
+.userPassword > input{
+    margin-top: 8px;
+    border: 1px solid #d5d4dc;
+    border-radius: 8px;
+    padding: 12px;
+}
+.userPassword > input:focus{
+    outline: none;
+}
+
+.forgetPassword{
+    margin: 8px 0 18px 0;
+    display: flex;
+    justify-content: end;
+}
+.forgetPassword > a{
+    color: #111;
+    text-decoration: underline;
+}
+
+.loginBtn{
+    width: 100%;
+}
+.loginBtn > button{
+    width: 100%;
+    padding: 12px 24px;
+    background-color: #2141b7;
+    border: none;
+    font-size: 20px;
+    color: #f5f5f5;
+    border-radius: 8px;
+}
+
+.signPart{
+    margin-top: 32px;
+    display: flex;
+    justify-content: center
+}
+.signPart > span{
+    color: #333;
+}
+
+.signPart > span > a{
+    color: #2141b7;
+    font-weight: bold;
+}
