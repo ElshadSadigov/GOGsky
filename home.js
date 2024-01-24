@@ -55,7 +55,7 @@ let guestText = document.querySelector('#guestText')
 let listGuest = document.querySelector('#listGuest')
 let adultCount = document.querySelector('#adultCount')
 let adultIncrease = document.querySelector('#adultIncrease')
-let adultDecrease = document.querySelector('#adultDecrease')
+let adultDecrease = document.querySelector('#adultDecrease') 
 let childIncrease = document.querySelector('#childIncrease')
 let childDecrease = document.querySelector('#childDecrease')
 let childCount = document.querySelector('#childCount')
@@ -90,14 +90,3 @@ selectGuest.onclick = function () {
     }
 }
 // Home Guest
-
-// FAQ
-const faqSelect = document.querySelectorAll('.faqSelect')
-const faqSection = document.querySelectorAll(".faqSection")
-
-faqSelect.forEach(e => {
-    e.addEventListener('click', () => {
-        e.classList.toggle("faqActive")
-    })
-})
-// FAQ
