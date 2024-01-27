@@ -189,7 +189,13 @@
     gap: 10px;
     max-height: 120px;
     overflow-y: auto;
+    visibility: hidden;
 }
+
+div.activeDiv > ul{
+    visibility: visible;
+}
+
 .gridCard > div > ul > li{
     cursor: pointer;
 }
@@ -220,6 +226,14 @@
 }
 .gridCard > div > div>:focus{
     outline: none;
+}
+
+.guestAdd{
+    position: absolute;
+    left: 0;
+    top: 60px;
+    z-index: 9;
+    background-color: #fff;
 }
 
 .show {
