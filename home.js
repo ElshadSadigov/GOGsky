@@ -18,7 +18,61 @@ for(optionDestination of optionsDestination){
         destinationText.parentElement.parentElement.classList.toggle('activeDiv')
     }
 }
-// Serach destination
+// Search destination
+
+// Search guest
+
+
+let clickGuest = document.querySelector('.clickGuest')
+let guestText = document.querySelector('#guestText')
+let listGuest = document.querySelector('#listGuest')
+let adultCount = document.querySelector('#adultCount')
+let adultIncrease = document.querySelector('#adultIncrease')
+let adultDecrease = document.querySelector('#adultDecrease') 
+let childIncrease = document.querySelector('#childIncrease')
+let childDecrease = document.querySelector('#childDecrease')
+let childCount = document.querySelector('#childCount')
+
+
+adultIncrease.onclick = function(){
+    adultCount.innerHTML = Number(adultCount.innerHTML) + 1
+}
+adultDecrease.onclick = function(){
+    if(adultCount.innerHTML>0){
+        adultCount.innerHTML = Number(adultCount.innerHTML) - 1
+    }
+}
+childIncrease.onclick = function(){
+    childCount.innerHTML = Number(childCount.innerHTML) + 1
+}
+childDecrease.onclick = function(){
+    if(childCount.innerHTML>0){
+        childCount.innerHTML = Number(childCount.innerHTML) - 1
+    }
+}
+
+clickGuest.onclick = function(){
+    clickGuest.parentElement.classList.toggle('activeDiv')
+    if(clickGuest.classList.contains('activeDiv')){
+        console.log("salam")
+        guestText.innerHTML = guestText.innerHTML
+    }else if(adultCount.innerHTML > 0){
+        guestText.innerHTML = `${adultCount.innerHTML} adult, ${childCount.innerHTML} child`
+    }
+}
+
+// selectGuest.onclick = function () {
+//         listGuest.classList.toggle("show")
+//         if (listGuest.classList.contains('show')) {
+//             guestText.innerHTML = guestText.innerHTML
+//         } else if (adultCount.innerHTML > 0 || childCount.innerHTML > 0) {
+//             guestText.innerHTML = `${adultCount.innerHTML} adult, ${childCount.innerHTML} child`
+    
+//         }
+//     }
+
+
+// Search guest 
 
 
 // Home Ratings
