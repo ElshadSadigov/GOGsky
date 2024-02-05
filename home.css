@@ -304,4 +304,12 @@ div.activeDiv > div{
     top: 235px;
 }
 
+
+@media screen and (max-width: 1280px) {
+    .homeSearch{
+        padding: 0 60px;
+    }
+}
+
+
 /* Home search */

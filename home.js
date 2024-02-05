@@ -21,8 +21,6 @@ for(optionDestination of optionsDestination){
 // Search destination
 
 // Search guest
-
-
 let clickGuest = document.querySelector('.clickGuest')
 let guestText = document.querySelector('#guestText')
 let listGuest = document.querySelector('#listGuest')
@@ -32,7 +30,7 @@ let adultDecrease = document.querySelector('#adultDecrease')
 let childIncrease = document.querySelector('#childIncrease')
 let childDecrease = document.querySelector('#childDecrease')
 let childCount = document.querySelector('#childCount')
-
+let activeClass = document.querySelector('.activeClass')
 
 adultIncrease.onclick = function(){
     adultCount.innerHTML = Number(adultCount.innerHTML) + 1
@@ -53,27 +51,13 @@ childDecrease.onclick = function(){
 
 clickGuest.onclick = function(){
     clickGuest.parentElement.classList.toggle('activeDiv')
-    if(clickGuest.classList.contains('activeDiv')){
-        console.log("salam")
+    if(activeClass.classList.contains('activeDiv')){
         guestText.innerHTML = guestText.innerHTML
     }else if(adultCount.innerHTML > 0){
         guestText.innerHTML = `${adultCount.innerHTML} adult, ${childCount.innerHTML} child`
     }
 }
-
-// selectGuest.onclick = function () {
-//         listGuest.classList.toggle("show")
-//         if (listGuest.classList.contains('show')) {
-//             guestText.innerHTML = guestText.innerHTML
-//         } else if (adultCount.innerHTML > 0 || childCount.innerHTML > 0) {
-//             guestText.innerHTML = `${adultCount.innerHTML} adult, ${childCount.innerHTML} child`
-    
-//         }
-//     }
-
-
-// Search guest 
-
+// Search guest
 
 // Home Ratings
 let ratingsText = document.querySelector('#ratingsText')
@@ -85,7 +69,6 @@ for (optionRating of optionsRatings) {
         ratingsText.parentElement.parentElement.classList.toggle("activeDiv")
     }
 }
-
 // Home Ratings
 
 // Home Nutrition
@@ -98,7 +81,6 @@ for (optionNutrition of optionsNutritions) {
         nutritionText.parentElement.parentElement.classList.toggle("activeDiv")
     }
 }
-
 // Home Nutrition
 
 // Home Nights
@@ -115,51 +97,8 @@ for (optionNight of optionsNights) {
 
 
 const clickDiv = document.querySelectorAll(".clickDiv")
-
 clickDiv.forEach(e => {
     e.addEventListener('click', ()=>{
         e.parentElement.classList.toggle("activeDiv")
     })
 })
-
-// Home Guest
-// let selectGuest = document.querySelector('#selectGuest')
-// let guestText = document.querySelector('#guestText')
-// let listGuest = document.querySelector('#listGuest')
-// let adultCount = document.querySelector('#adultCount')
-// let adultIncrease = document.querySelector('#adultIncrease')
-// let adultDecrease = document.querySelector('#adultDecrease') 
-// let childIncrease = document.querySelector('#childIncrease')
-// let childDecrease = document.querySelector('#childDecrease')
-// let childCount = document.querySelector('#childCount')
-
-
-
-// adultDecrease.onclick = function () {
-//     if (adultCount.innerHTML > 0) {
-//         adultCount.innerHTML = Number(adultCount.innerHTML) - 1
-//     }
-// }
-// adultIncrease.onclick = function () {
-//     adultCount.innerHTML = Number(adultCount.innerHTML) + 1
-// }
-
-// childDecrease.onclick = function () {
-//     if (childCount.innerHTML > 0) {
-//         childCount.innerHTML = Number(childCount.innerHTML) - 1
-//     }
-// }
-// childIncrease.onclick = function () {
-//     childCount.innerHTML = Number(childCount.innerHTML) + 1
-// }
-
-// selectGuest.onclick = function () {
-//     listGuest.classList.toggle("show")
-//     if (listGuest.classList.contains('show')) {
-//         guestText.innerHTML = guestText.innerHTML
-//     } else if (adultCount.innerHTML > 0 || childCount.innerHTML > 0) {
-//         guestText.innerHTML = `${adultCount.innerHTML} adult, ${childCount.innerHTML} child`
-
-//     }
-// }
-// Home Guest
