@@ -1,3 +1,16 @@
+let data = []
+
+
+// Whatsapp
+const whatsapp = () =>{
+    let number = 506609694;
+    let url = "https://wa.me/" + number;
+    window.open(url, "_blank")
+}
+// Whatsapp
+
+
+
 // Search location
 let locationText = document.querySelector('#locationText')
 let optionsLocation = document.querySelector('.optionsLocation')
@@ -100,5 +113,16 @@ const clickDiv = document.querySelectorAll(".clickDiv")
 clickDiv.forEach(e => {
     e.addEventListener('click', ()=>{
         e.parentElement.classList.toggle("activeDiv")
+        console.log(locationText.innerHTML)
     })
 })
+
+
+const dropdown = document.querySelector(".dropdown")
+const navbar = document.querySelector(".navbar")
+dropdown.addEventListener('click', ()=>{
+    dropdown.parentElement.classList.toggle("activeDown")
+    navbar.style.transition = "300ms"
+})
+
+
