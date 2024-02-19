@@ -153,26 +153,26 @@ header.activeDown > .dropdown > img:nth-child(2){
 .gridDivOne{
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    gap: 40px;
+    gap: 18px 40px;
     width: 100%;
 }
 
 .gridDivTwo{
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    gap: 40px;
+    gap: 18px 40px;
 }
 
 .gridDivTwo > div{
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    gap: 10px;
+    gap: 18px 10px;
 }
 
 .gridDivThree{
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    gap: 25px;
+    gap: 18px 25px;
 }
 
 
@@ -532,6 +532,9 @@ div.activeDiv > div > img{
     }
     .searchPart{
         transform: translateY(30px);
+    }
+    .gridDivs{
+        gap: 18px;
     }
 }
 /* Home search */
